@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 340px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .register-box h2 {
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: gray;
+            margin-bottom: 20px;
+        }
+
+        .register-box input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .register-box input:focus {
+            border-color: #43e97b;
+            box-shadow: 0 0 5px #43e97b;
+        }
+
+        .register-box button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .register-box button:hover {
+            opacity: 0.9;
+        }
+
+        .login-text {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-text a {
+            color: #43e97b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="register-box">
+    <h2>Create Account ✨</h2>
+    <p class="subtitle">Join us today</p>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Create Password" required>
+        <input type="text" name="city" placeholder="City" required>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <p class="login-text">
+        Already have an account? <a href="/login">Login</a>
+    </p>
+</div>
+
+</body>
+</html>
